@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
 * {
   box-sizing: border-box;
+}
+
+.navbar ul li a {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .top-bar .nav-link:hover, .top-bar .nav-item.active a {
     color: #e74c3c;
     border-bottom: 2px solid #e74c3c;
 }
+
 .navbar-brand img {
     width: 90%;
 }
@@ -101,3 +106,95 @@
     background-color: #e74c3c;
     border: 1px solid #e74c3c;
 }
+/* anchor */
+
+.anchor-section {
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    img {
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        transform: translate(-55%,-58%);
+    }
+}
+
+/* Bottom Section */
+
+.bottom-section {
+    text-align: center;
+    padding: 7% 0;
+    .box {
+        height: 65px;
+        width: 65px;
+        border: 1px solid #e5e5e5;
+        margin: 0 auto;  
+    }
+    .icon1 {
+        margin-top: 42%;
+    }
+    .icon2 {
+        margin-top: 31%;
+    }
+    .icon3 {
+        margin-top: 24%;
+    }
+    .icon4 {
+        margin-top: 31%;
+    }
+    h4 {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: bold;
+         color: #6a6a6a;
+         font-size: 17px;
+         letter-spacing: 1px;
+         padding-top: 20px;
+    }
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #999999;
+        margin-top: 10px;
+    }
+    .icon-wrapper {
+        :hover {
+        cursor: pointer;
+        }
+    }
+
+}
+
+.bottom-section [class*="col-"]:hover h4 {
+    color: #e74c3c;
+    cursor: pointer;
+}
+.bottom-section .box:hover {
+    cursor: pointer;
+    border: 1px solid #e74c3c;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.bottom-section .box:not(:hover) {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 300px) and (max-width: 430px) { 
+
+    }
