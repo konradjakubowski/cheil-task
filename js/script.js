@@ -20,7 +20,7 @@ $('a[href^="#"]').on('click', function(event) {
         prevButton: '.swiper-button-prev',
         paginationClickable: true,
         centeredSlides: true,
-        autoplay: 10000,
+        autoplay: 30000,
            speed: 1500,
            loop: true,
         autoplayDisableOnInteraction: false
