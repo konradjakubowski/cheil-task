@@ -1,3 +1,17 @@
+$(function() {
+    $('#js-burger-nav, #js-close-nav').on("click", function() {
+        $('.top-wrapper, .js-dropdown').toggleClass("open");
+    }); 
+    $('.burger-wrapper').click( function() {
+            $('.close-wrapper').toggle();
+            $('.burger-wrapper').toggle();
+        });
+        $('.close-wrapper').click( function() {
+            $('.burger-wrapper').toggle();
+            $('.close-wrapper').toggle();
+        });
+});
+
 /*------- Smooth Scroll -------*/
 
 $('a[href^="#"]').on('click', function(event) {
