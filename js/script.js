@@ -1,6 +1,7 @@
 $(function() {
     $('#js-burger-nav, #js-close-nav').on("click", function() {
         $('.top-wrapper, .js-dropdown').toggleClass("open");
+
     }); 
     $('.burger-wrapper').click( function() {
             $('.close-wrapper').toggle();
@@ -11,6 +12,7 @@ $(function() {
             $('.close-wrapper').toggle();
         });
 });
+
 
 /*------- Smooth Scroll -------*/
 
