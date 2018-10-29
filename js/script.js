@@ -1,7 +1,6 @@
 $(function() {
     $('#js-burger-nav, #js-close-nav').on("click", function() {
         $('.top-wrapper, .js-dropdown').toggleClass("open");
-
     }); 
     $('.burger-wrapper').click( function() {
             $('.close-wrapper').toggle();
@@ -10,23 +9,8 @@ $(function() {
         $('.close-wrapper').click( function() {
             $('.burger-wrapper').toggle();
             $('.close-wrapper').toggle();
+
         });
-});
-
-
-/*------- Smooth Scroll -------*/
-
-$('a[href^="#"]').on('click', function(event) {
-
-    var target = $( $(this).attr('href') );
-
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-
 });
 
 /*------- Swiper Slider -------*/
